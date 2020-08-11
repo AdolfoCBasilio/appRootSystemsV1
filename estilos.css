@@ -1,4 +1,5 @@
 *{
+    
     scroll-behavior: smooth;
 }
 
@@ -50,7 +51,6 @@ body{
                          "textoUno   textoUno   infoUno"
                          "textoUno   textoUno   infoDos"
                          "textoUno   textoUno   infoTres";                      
-    
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;

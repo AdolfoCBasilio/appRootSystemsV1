@@ -195,15 +195,27 @@ background: rgba(0, 179, 84, 0.8);
     .divEmail{
     width: 80%;
     }
+    .divEmailDos{
+        width: 80%;
+        }
     .divPassword{
     width: 80%;
     }
+    .divPasswordDos{
+        width: 80%;
+        }
     .e-mail{
      width: 80%;
     }
+    .e-mailDos{
+        width: 80%;
+       }
     .password{
     width: 80%;
     }
+    .passwordDos{
+        width: 80%;
+        }
     .loginbutton{
     font-size: 30px;
     width: 80%;

@@ -287,7 +287,7 @@ body{
     border: 1px solid white;
     display: flex;
     height: 8vh;
-    width: 10vw;
+    width: 14vw;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -359,7 +359,7 @@ body{
     border: 1px solid white;
     display: flex;
     height: 8vh;
-    width: 12vw;
+    width: 14vw;
     margin-top: 2%;
     justify-content: center;
     align-items: center;
@@ -477,18 +477,18 @@ body{
 }
 @media screen and (max-width:2560px){
     .pestañas{
-        width: 35%;
+        width: 34%;
         
     }
 }
 @media screen and (max-width:1440px){
     .pestañas{
-        width: 40%;
+        width: 46%;
     }
 }
 @media screen and (max-width:1024px){
     .pestañas{
-        width: 50%;
+        width: 61%;
     }
     .botonRiegoAutomatico{
         width: 18vw;
@@ -497,6 +497,12 @@ body{
         width: 18vw;
     }
     
+}
+@media screen and (max-width:928px){
+    .agregarCultivos{
+        margin:0% 1%;
+        margin-top: 3%;
+    }
 }
 @media screen and (max-width:768px){
     .padre{

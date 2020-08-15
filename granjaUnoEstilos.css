@@ -298,8 +298,10 @@ body{
     display: flex;
     height: 100%;
     width: 50%;
-   /*  border: 1px solid rgb(0, 4, 255); */
-    justify-content: center;
+   /*  border: 1px solid rgb(136, 255, 0); */
+    justify-content: start;
+    border-right: 1px solid white;
+    flex-direction: column;
 }
 .controlDos h1{display: flex;
     font-size: 30px;
@@ -308,6 +310,42 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+.controlDosBotones{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.controlDos h2{
+    display: flex;
+    height: 8vh;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.setConfig{
+    display: flex;
+    color:white;
+}
+.botonRiegoAutomatico{
+    display: flex;
+    height: 8vh;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: green;
+    border-radius: 30px;
+    margin-top: 2%;
+    border-bottom: 2px solid white;
+}
+.botonRiegoAutomatico:hover{
+    background: rgb(0, 153, 0);
 }
 .controlTres{
     display: flex;
@@ -352,6 +390,63 @@ body{
 
 .cultivos{
     grid-area: Cultivos;
-    border:1px solid blue;
+    background: #3EB33E;
     height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+    align-items: stretch;
 }
+.cultivos h1{
+    display: flex;
+    background: green;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.agregarCultivos{
+    background: green;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10%;
+    margin-top: 3%;
+    border-radius: 30px;
+}
+.agregarCultivos img{
+    margin: 0% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    height: 12vh;
+}
+.agregarCultivos img:hover{
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.botonAgregar{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background:#FAB515;
+    border:2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 5vh;
+    margin-top:3% ;
+}
+.botonAgregar:hover{
+    color: white;
+    background:#dba31e;
+    border:2px solid white;
+}
+

@@ -497,7 +497,7 @@ body{
     }
     
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
     .padre{
         display: grid;
         grid-template-columns: minmax(auto, 768px);

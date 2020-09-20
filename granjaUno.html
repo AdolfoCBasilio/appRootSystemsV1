@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,14 @@
     <!-- Estilos Css -->
     <link rel="stylesheet" href="granjaUnoEstilos.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- icons -->
     <script src="https://kit.fontawesome.com/0b1110d902.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <header class="saludo">
         <h1 class="mensajeSaludo">Bienvenido a tu granja</h1>
@@ -21,23 +25,105 @@
 
     <nav class="navUno">
         <div class="pestañas">
-        <a href="index.html" class="Diseño">Diseño de granja</a>
-        <a href="inicioSesion.html" class="Conocimientos">AgroConocimientos</a>
-        <a href="crearCuenta.html" class="Dispositivos">Dispositivos</a>
+            <a href="index.html" class="Diseño" style="border-bottom: 1px solid white;">Diseño de granja</a>
+            <a href="inicioSesion.html" class="Conocimientos">AgroConocimientos</a>
+            <a href="crearCuenta.html" class="Dispositivos">Dispositivos</a>
         </div>
 
         <div class="imagen">
-        <img src="imagenes/logoInicio.png" alt="" class="logo">
+            <img src="imagenes/logoInicio.png" alt="" class="logo">
         </div>
     </nav>
 
+
+
+
+
+
+
+
+
+
+    <div id="MENSAJE" class="MENSAJE">
+        <div id="MensajeDos" class="MensajeDos">
+            <div class="divCerrar">
+                <a href="#" id="cerrar" class="cerrar">X</a>
+            </div>
+
+            <div class="mensajeContenedorImg">
+
+                <h1 class="mensajeAgroConocimientos">AgroConocimientos</h1>
+                <h2>Tomate Bola</h2>
+
+                <div class="mensajeImagenAgro">
+                    <img src="./imagenes/tomatebola.png" alt="" class="imgM">
+                    <p class="info">
+                        Es un tomate redondo. Al ser carnoso, es ideal para partirlo en rodajas y servirlo en ensaladas
+                        o platillos como lonches, sándwiches o hamburguesas. Esta variedad también se utiliza para
+                        rellenarlo con algún ingrediente fresco y hay quienes lo asan a la parrilla o al horno.
+                    </p>
+                </div>
+
+                <div class="agroconomicientosMensaje">
+                    <div class="agoconocimientosMensajeDos">
+                        <a href="#" class="irAgroconocmientosMensaje">Conoce sus cuidados en AgroConocimientos</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="MENSAJEP" class="MENSAJE">
+        <div id="MensajeDos" class="MensajeDos">
+            <div class="divCerrar">
+                <a href="#" id="cerrar" class="cerrar">X</a>
+            </div>
+
+            <div class="mensajeContenedorImg">
+
+                <h1 class="mensajeAgroConocimientos">AgroConocimientos</h1>
+                <h2>Pepino</h2>
+
+                <div class="mensajeImagenAgro">
+                    <img src="./imagenes/pepino.png" alt="" class="imgM">
+                    <p class="info">Es un ingrediente típico en las ensaladas mediterráneas y su variante encurtida, el
+                        pepinillo, un popular aperitivo.
+                        Se emplea con frecuencia crudo en las diversas cocinas del mundo como ingrediente de ensaladas,
+                        aunque existen platos en el norte de Europa conocidos como sopas de pepino que son muy
+                        populares.
+                    </p>
+                </div>
+
+                <div class="agroconomicientosMensaje">
+                    <div class="agoconocimientosMensajeDos">
+                        <a href="#" class="irAgroconocmientosMensaje">Conoce sus cuidados en AgroConocimientos</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+    
+
     <section class="padre">
         <div class="contenedor">
-           <div class="farm">
+            <div class="farm">
                 <div class="secFarm">
                     <h1>Granja Digital</h1>
                 </div>
-                <div class="secAreaUno">
+                <div class="secAreaUno" style="border-bottom: 1px solid white;">
                     <a href="inicioSesion.html">Area 1</a>
                 </div>
                 <div class="secAreaDos">
@@ -46,91 +132,114 @@
                 <div class="secAreaTres">
                     <a href="APP.html">Area 3</a>
                 </div>
-           </div>
-
-
-           <div class="control">
-               <div class="controlMensaje">
-                <h1>Sensores & Actuadores</h1>
-               </div>
-            
-            <div class="contenedorDatos">
-                <div class="temperatura">
-                    <h1>Temperatusa Suelo</h1>
-                    <h2>30°C</h2>
-                </div>
-                <div class="humedad">
-                    <h1>Humedad Suelo</h1>
-                    <h2>55%</h2>
-                </div>
-                <div class="agua">
-                    <h1>Agua Contenedor</h1>
-                    <h2>60%</h2>
-                </div>
             </div>
 
-            <div class="controles">
-                <div class="upControles">
-                    <div class="controlUno">
-                        <h1>Riego Manual</h1>
-                        <div class="controlUnoBotones">
-                        <h2>Apagado</h2>
-                        <a href="" onclick="alert('Dispositivo: CONECTADO\nRiego remoto: ENCENDIDO');" class="botonRiego">Encender</a>
+
+            <div class="control">
+                <div class="controlMensaje">
+                    <h1>Sensores & Actuadores</h1>
+                </div>
+
+                <div class="contenedorDatos">
+                    <div class="temperatura">
+                        <h1>Temperatusa Suelo</h1>
+                        <h2>30°C</h2>
+                    </div>
+                    <div class="humedad">
+                        <h1>Humedad Suelo</h1>
+                        <h2>55%</h2>
+                    </div>
+                    <div class="agua">
+                        <h1>Agua Contenedor</h1>
+                        <h2>60%</h2>
+                    </div>
+                </div>
+
+                <div class="controles">
+                    <div class="upControles">
+                        <div class="controlUno">
+                            <h1>Riego Manual</h1>
+                            <div class="controlUnoBotones">
+                                <h2>Apagado</h2>
+                                <a href="" id="botonRiego" class="botonRiego">Encender</a>
+                            </div>
+                        </div>
+                        <div class="controlDos">
+                            <h1>Riego Automatico</h1>
+                            <div class="controlDosBotones">
+                                <div class="textControlBotones">
+                                    <h2>Encender al:</h2>
+                                </div>
+                                <div class="setConfig">
+                                    <h3>60</h3>
+                                    <h4>%</h4>
+                                </div>
+                                <div class="contenedorBotonRiego">
+                                    <a href="" id="botonRiegoAutomatico" class="botonRiegoAutomatico">Configurar
+                                        riego</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="controlDos">
-                        <h1>Riego Automatico</h1>
-                        <div class="controlDosBotones">
-                            <div class="textControlBotones">
-                                <h2>Encender al:</h2>
-                            </div>
-                            <div class="setConfig">
-                                <h3>60</h3><h4>%</h4>
-                            </div>
-                            <div class="contenedorBotonRiego">    
-                                <a href="" onclick="alert('Configurar riego');" class="botonRiegoAutomatico">Configurar riego</a>
-                            </div>
+
+                    <div class="controlTres">
+                        <h1>Estoy cultivando</h1>
+                        <div class="contenedorCultivos">
+
+                            <a href="#">
+                                <img src="imagenes/tomatebola.png" alt="" id="tomateImg">
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/tomatecherry.png" alt="" id="cherryImg">
+
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/pepino.png" alt="" id="pepinoImg">
+
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/lechuga.png" alt="" id="lechugaImg">
+
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/sandia.png" alt="" id="sandiaImg">
+
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/pimiento.png" alt="" id="pimientoImg">
+
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/melon.png" alt="" id="melonImg">
+
+                            </a>
+
                         </div>
                     </div>
                 </div>
-                
-                <div class="controlTres">
-                    <h1>Estoy cultivando</h1>
-                    <div class="contenedorCultivos">
-                        <img src="imagenes/tomatebola.png" alt="">
-                        <img src="imagenes/tomatecherry.png" alt="">
-                        <img src="imagenes/pepino.png" alt="">
-                        <img src="imagenes/lechuga.png" alt="">
-                        <img src="imagenes/sandia.png" alt="">
-                        <img src="imagenes/pepino.png" alt="">
-                        <img src="imagenes/pimiento.png" alt="">
-                        <img src="imagenes/melon.png" alt="">
-                        
-                    </div>
-                </div>
+
             </div>
 
-           </div>
-           
 
-           <div class="cultivos">
+            <div class="cultivos">
                 <h1>Cultivos</h1>
                 <div class="agregarCultivos">
-                        <img src="imagenes/tomatebola.png" alt="">
-                        <img src="imagenes/tomatecherry.png" alt="">
-                        <img src="imagenes/pepino.png" alt="">
-                        <img src="imagenes/lechuga.png" alt="">
-                        <img src="imagenes/sandia.png" alt="">
-                        <img src="imagenes/pepino.png" alt="">
-                        <img src="imagenes/pimiento.png" alt="">
-                        <img src="imagenes/melon.png" alt="">
+                    <img src="imagenes/tomatebola.png" alt="" id="tomate">
+                    <img src="imagenes/tomatecherry.png" alt="" id="cherry">
+                    <img src="imagenes/pepino.png" alt="" id="pepino">
+                    <img src="imagenes/lechuga.png" alt="" id="lechuga">
+                    <img src="imagenes/sandia.png" alt="" id="sandia">
+                    <img src="imagenes/pimiento.png" alt="" id="pimiento">
+                    <img src="imagenes/melon.png" alt="" id="melon">
                 </div>
-                <a href="" class="botonAgregar">Agregar</a>
-           </div>
-            
+                <a href="" id="agregar" class="botonAgregar">Cultivar</a>
+            </div>
+
         </div>
-    
+
     </section>
 
+    <script src="granjaUno.js"></script>
 </body>
+
 </html>

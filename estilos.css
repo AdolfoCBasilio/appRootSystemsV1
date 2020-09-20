@@ -1,34 +1,31 @@
-*{
-    
-    scroll-behavior: smooth;
-}
-
-body{
+body {
     margin: 0;
     background: #ffffff;
     /* height:300px; */
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+   
 }
-.Inicio{
-   /*  background: yellow; */
+
+.Inicio {
+    /*  background: yellow; */
     /* border:10px solid red; */
     display: grid;
     grid-template-columns: minmax(auto, 2560px);
     width: 100%;
     height: 98vh;
-    
-   }
- .Fondo{ /* imagen de fondo  */
-     width: inherit;
-     height: 98vh;
-     object-fit: cover;
-     objet-position:center;
-     position: absolute;
-     filter: saturate(1.2);
- }
+}
 
-.fondoNegro{
+.Fondo {
+    /* imagen de fondo  */
+    width: inherit;
+    height: 98vh;
+    object-fit: cover;
+    objet-position: center;
+    position: absolute;
+    filter: saturate(1.2);
+}
+
+.fondoNegro {
     width: 100%;
     height: 98vh;
     background-color: rgba(0, 0, 0, 0.2);
@@ -41,40 +38,46 @@ body{
 
 
 
-.contenedorInicio{
-    position: relative;/* 
+.contenedorInicio {
+    position: relative;
+    /* 
     border: 10px solid purple; */
     display: grid;
     height: 400px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "logoInicio logoInicio irApp"
-                         "textoUno   textoUno   infoUno"
-                         "textoUno   textoUno   infoDos"
-                         "textoUno   textoUno   infoTres";                      
+        "textoUno   textoUno   infoUno"
+        "textoUno   textoUno   infoDos"
+        "textoUno   textoUno   infoTres";
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
-    }
+}
 
-                      
-.logoInicio{/* 
+
+.logoInicio {
+    /* 
     border:5px solid red; */
     grid-area: logoInicio;
-    }
-.logoInicio img{/* 
+}
+
+.logoInicio img {
+    /* 
     border: 5px solid green; */
     height: 40px;
     padding-left: 10px;
     padding-top: 0px;
-    padding-bottom: 50px;  
+    padding-bottom: 50px;
 }
-.irApp{
+
+.irApp {
     grid-area: irApp;
     justify-self: center;
 }
-.irAppBoton{
+
+.irAppBoton {
     background: rgba(255, 255, 255, 0.2);
-    color:white;
+    color: white;
     display: inline-block;
     font-size: 100%;
     padding: 10px 20px;
@@ -85,30 +88,34 @@ body{
     box-shadow: 0px 2px 0px rgba(0, 255, 0, 0.3);
     border-radius: 20px;
 }
-.irAppBoton:hover{
+
+.irAppBoton:hover {
     background: rgb(240, 240, 240);
-    color:rgb(2, 173, 2);
-}
-.irAppBoton:active{
-    background: rgb(206, 206, 206);
-    color:rgb(2, 173, 2);
+    color: rgb(2, 173, 2);
 }
 
-.textoUno{
+.irAppBoton:active {
+    background: rgb(206, 206, 206);
+    color: rgb(2, 173, 2);
+}
+
+.textoUno {
     grid-area: textoUno;
     margin: 0px;
     padding: 0px;
     color: white;
     height: 1fr;
 
-    
+
     /* border: 10px solid green; */
-    
-    }
-.textoUno h1{
-    display: block;/* 
+
+}
+
+.textoUno h1 {
+    display: block;
+    /* 
     border: 1px solid red; */
-    padding-left:0px ;
+    padding-left: 0px;
     margin-bottom: 0px;
     margin-top: 0%;
     padding-top: 0px;
@@ -118,8 +125,10 @@ body{
     font-size: 100px;
     line-height: 110px;
 }
-.textoUno h2{
-    display:inline-block;/* 
+
+.textoUno h2 {
+    display: inline-block;
+    /* 
     border: 1px solid blue; */
     margin: 0;
     font-size: 40px;
@@ -130,56 +139,64 @@ body{
     line-height: 60px;
 }
 
-.infoUno{
-    grid-area: infoUno;/* 
+.infoUno {
+    grid-area: infoUno;
+    /* 
     border: 1px solid red; */
     color: rgb(255, 255, 255)
-    }
+}
 
-.contenedorUno{/* 
+.contenedorUno {
+    /* 
     background: yellow; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 20px;
-    padding:20px 5px;
+    padding: 20px 5px;
     text-align: start;
     display: block;
     text-decoration: none;
     color: white;
     transition: transform;
 }
-.contenedorUno:hover{
+
+.contenedorUno:hover {
     transform: scale(1.2);
     transition: 100ms;
-    background:#00B355;
-    border:1px solid white;
+    background: #00B355;
+    border: 1px solid white;
 }
-.contenedorUno:active{
+
+.contenedorUno:active {
     transition: 20ms;
-    background:#00853e;
-    border:2px solid white;
+    background: #00853e;
+    border: 2px solid white;
     transform: scale(1.15);
 }
-.contenedorUno b{
+
+.contenedorUno b {
     font-size: 20px;
     font-weight: normal;
-    
+
 }
- 
-    
-.infoDos{/* 
+
+
+.infoDos {
+    /* 
     border: 1px solid blue; */
     grid-area: infoDos;
     color: white;
-    
-    
+
+
     text-align: start;
-    
-    }
-.contenedorDos{/* 
+
+}
+
+.contenedorDos {
+    /* 
     background: yellow; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     /* box-sizing: border-box; */
-    padding:20px 5px;
+    padding: 20px 5px;
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: block;
@@ -187,63 +204,72 @@ body{
     color: white;
     transition: transform;
 }
-.contenedorDos:hover{
+
+.contenedorDos:hover {
     transform: scale(1.2);
     transition: 100ms;
-    background:#00B355;
-    
-    border:1px solid rgb(255, 255, 255);
+    background: #00B355;
+
+    border: 1px solid rgb(255, 255, 255);
 }
-.contenedorDos:active{
-        transition: 20ms;
-        background:#00853e;
-        border:2px solid white;
-        transform: scale(1.15);
-    }
-.contenedorDos b{
+
+.contenedorDos:active {
+    transition: 20ms;
+    background: #00853e;
+    border: 2px solid white;
+    transform: scale(1.15);
+}
+
+.contenedorDos b {
     font-size: 20px;
     font-weight: normal;
-    
-}
-    
-    
 
-.infoTres{/* 
+}
+
+
+
+.infoTres {
+    /* 
     border: 1px solid red; */
     grid-area: infoTres;
     color: white;
     text-align: start;
     font-size: 20px;
-    }   
-    .contenedorTres{/* 
+}
+
+.contenedorTres {
+    /* 
         background: yellow; */
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        /* box-sizing: border-box; */
-        padding: 20px 10px;
-        margin-top: 20px;
-        display: block;
-        text-decoration: none;
-        color: white;
-        transition: transform;
-    }
-    .contenedorTres:hover{
-        transform: scale(1.2);
-        transition: 100ms;    
-    background:#00B355;
-    border:1px solid white;
-        
-    }
-    .contenedorTres:active{
-        transition: 20ms;
-        background:#00853e;
-        border:2px solid white;
-        transform: scale(1.15);
-    }
-    .contenedorTres b{
-        
-        font-weight: normal;
-        
-    }     
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* box-sizing: border-box; */
+    padding: 20px 10px;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: transform;
+}
+
+.contenedorTres:hover {
+    transform: scale(1.2);
+    transition: 100ms;
+    background: #00B355;
+    border: 1px solid white;
+
+}
+
+.contenedorTres:active {
+    transition: 20ms;
+    background: #00853e;
+    border: 2px solid white;
+    transform: scale(1.15);
+}
+
+.contenedorTres b {
+
+    font-weight: normal;
+
+}
 
 
 
@@ -254,27 +280,33 @@ body{
 
 
 
- 
-.seccionDos{ /* 
-    background: yellow; *//* 
+
+.seccionDos {
+    /* 
+    background: yellow; */
+    /* 
     border:10px solid red;  */
     display: grid;
     grid-template-columns: minmax(auto, 2560px);
     width: 100%;
     height: 90vh;
     margin-top: 11%;
-    
-   } 
-.secDosFondo{ /* imagen de fondo  */
-     width: inherit;
-     height: 90vh;
-     object-fit: cover;
-     objet-position:center;
-     position: absolute;
-    
-     /* border: 10px solid rgb(68, 0, 255); */
- }
-.secDosfondoNegro{/* 
+
+}
+
+.secDosFondo {
+    /* imagen de fondo  */
+    width: inherit;
+    height: 90vh;
+    object-fit: cover;
+    objet-position: center;
+    position: absolute;
+
+    /* border: 10px solid rgb(68, 0, 255); */
+}
+
+.secDosfondoNegro {
+    /* 
     border: 1px solid red; */
     width: 100%;
     height: 90vh;
@@ -291,33 +323,36 @@ body{
 
 
 
-.secDoscontenedor{/* 
+.secDoscontenedor {
+    /* 
     border: 5px solid white; */
     position: relative;
     /* border: 10px solid purple;  */
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "texSuperior texSuperior"
-                         ".           secDostextoUno"                      
-                         ".           secDostextoUno";   
-    padding-left:5%;
-    padding-right:5%;
+        ".           secDostextoUno"
+        ".           secDostextoUno";
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 0;
-    }
-.texSuperior{
+}
+
+.texSuperior {
     /* text-align: center; */
-    grid-area:texSuperior;
+    grid-area: texSuperior;
     /* border: 1px solid white; */
     height: 1fr;
     margin-top: -4%;
-    
-    
-    
+
+
+
 }
-.texSuperior h1{
-   /*  border:1px solid red; */
-    margin:0;
+
+.texSuperior h1 {
+    /*  border:1px solid red; */
+    margin: 0;
     text-align: center;
     height: 1fr;
     font-size: 30px;
@@ -328,42 +363,48 @@ body{
     color: rgb(255, 255, 255);
     border-radius: 50px;
 }
-.secDostextoUno{
-    grid-area: secDostextoUno;/* 
+
+.secDostextoUno {
+    grid-area: secDostextoUno;
+    /* 
     border: 2px solid red; */
     height: 1fr;
-    
+
 }
 
-.secDoscontenedorUno{
+.secDoscontenedorUno {
     background: rgba(0, 0, 0, 0.0);
     border: 1px solid white;
     margin-top: 5%;
     padding: 3%;
-    color:white;
+    color: white;
 }
 
 
-.secDostextoUno h1{
+.secDostextoUno h1 {
     font-size: 40px;
-    line-height: 50px;/* 
+    line-height: 50px;
+    /* 
     border: 1px solid red; */
     margin: 0px;
     font-weight: 200;
     font-style: italic;
     line-height: 40px;
 }
-.secDostextoUno h2{
+
+.secDostextoUno h2 {
     margin: 0px;
     font-weight: 400;
     font-style: normal;
-    font-size:30px;
+    font-size: 30px;
     font-weight: bold;
     font-style: normal;
     line-height: 40px;
 }
-.secDostextoUno b{
-    display: block;/* 
+
+.secDostextoUno b {
+    display: block;
+    /* 
     border: 1px solid red; */
     /* line-height: 10px; */
     font-size: 20px;
@@ -377,44 +418,54 @@ body{
 
 
 
-.seccionTres{ /* 
+.seccionTres {
+    /* 
     background: yellow; */
-   /*  border:1px solid red;  */
+    /*  border:1px solid red;  */
     display: grid;
     grid-template-columns: minmax(auto, 2560px);
     /* ////////// */
     height: 70vh;
     margin-top: 10%;
     /* border: 1px solid black; */
-   } 
-.secTresFondo{ /* imagen de fondo  */
-     width: 40%;
-     height: 70vh;
-     object-fit: cover;
-     objet-position:center;
-     position: absolute;/* 
+}
+
+.secTresFondo {
+    /* imagen de fondo  */
+    width: 40%;
+    height: 70vh;
+    object-fit: cover;
+    objet-position: center;
+    position: absolute;
+    /* 
      border: 10px solid rgb(68, 0, 255); */
-     /* border: 2px solid red; */
-     z-index: 2;
-    }
-.secTresfondoNegro{/* 
+    /* border: 2px solid red; */
+    z-index: 2;
+}
+
+.secTresfondoNegro {
+    /* 
     border: 1px solid red; */
     width: 40%;
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;/* 
+    position: absolute;
+    /* 
     border: px solid blue; */
     z-index: 3;
 }
-.fondoLetras{
+
+.fondoLetras {
     width: 95%;
     height: 50vh;
     margin-top: 5%;
-    position: absolute;/* 
+    position: absolute;
+    /* 
     border: 1px solid black; */
     z-index: 1;
 }
-.fondoVerde{
+
+.fondoVerde {
     width: 80%;
     height: 60vh;
     margin-top: -1%;
@@ -437,22 +488,24 @@ body{
 
 
 
-.secTrescontenedor{
+.secTrescontenedor {
     z-index: 4;
     display: grid;
     height: 70vh;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas: 
-                         ".           secTrestextoUno"                      
-                         ".           secTrestextoUno";   
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        ".           secTrestextoUno"
+        ".           secTrestextoUno";
 }
-.secTrestextoUno{
-    grid-area: secTrestextoUno ;
+
+.secTrestextoUno {
+    grid-area: secTrestextoUno;
     width: 100%;
     color: rgb(255, 255, 255);
     height: 70vh;
 }
-.secTrestextoUno h1{
+
+.secTrestextoUno h1 {
     padding-right: 8%;
     margin-top: 10%;
     margin-bottom: 0px;
@@ -461,7 +514,8 @@ body{
     font-style: normal;
     line-height: 60px;
 }
-.secTrestextoUno h2{
+
+.secTrestextoUno h2 {
     padding-right: 8%;
     margin-top: 0px;
     font-size: 20px;
@@ -477,24 +531,31 @@ body{
 
 
 
-.seccionCuatro{ /* 
-    background: yellow; *//* 
+.seccionCuatro {
+    /* 
+    background: yellow; */
+    /* 
     border:10px solid red;  */
     display: grid;
     grid-template-columns: minmax(auto, 2560px);
     width: 100%;
     height: 90vh;
     margin-top: 15%;
-   } 
-.secCuatroFondo{ /* imagen de fondo  */
-     width: inherit;
-     height: 90vh;
-     object-fit: cover;
-     objet-position:center;
-     position: absolute;/* 
+}
+
+.secCuatroFondo {
+    /* imagen de fondo  */
+    width: inherit;
+    height: 90vh;
+    object-fit: cover;
+    objet-position: center;
+    position: absolute;
+    /* 
      border: 10px solid rgb(68, 0, 255); */
- }
-.secCuatrofondoNegro{/* 
+}
+
+.secCuatrofondoNegro {
+    /* 
     border: 1px solid red; */
     width: inherit;
     height: 90vh;
@@ -511,72 +572,81 @@ body{
 
 
 
-.secCuatrocontenedor{/* 
+.secCuatrocontenedor {
+    /* 
     border: 5px solid white; */
     position: relative;
     /* border: 10px solid purple;  */
     display: grid;
-    height: 100%; 
-    grid-template-columns: 1fr 1fr ;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "texCuatroSuperior texCuatroSuperior"
-                         "secCuatrotextoUno  ."                      
-                         "secCuatrotextoUno  .";   
-    padding-left:5%;
-    padding-right:5%;
+        "secCuatrotextoUno  ."
+        "secCuatrotextoUno  .";
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 0;
-    }
-.texCuatroSuperior{
+}
+
+.texCuatroSuperior {
     /* text-align: center; */
-    grid-area:texCuatroSuperior;
+    grid-area: texCuatroSuperior;
     /* border: 1px solid white; */
     height: 1fr;
     margin-top: -12%;
 }
-.texCuatroSuperior h1{
-   /*  border:1px solid red; */
-    margin:0;
+
+.texCuatroSuperior h1 {
+    /*  border:1px solid red; */
+    margin: 0;
     text-align: center;
     height: 1fr;
     font-size: 40px;
-    
+
     font-weight: 200;
     font-style: italic;
     line-height: 40px;
 }
-.secCuatrotextoUno{
-    grid-area: secCuatrotextoUno;/* 
+
+.secCuatrotextoUno {
+    grid-area: secCuatrotextoUno;
+    /* 
     border: 2px solid red; */
     height: 1fr;
     color: white;
 }
 
-.secCuatrocontenedorUno{
+.secCuatrocontenedorUno {
     border: 1px solid white;
     margin-top: 20%;
     padding: 3%;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.secCuatrotextoUno h1{
+.secCuatrotextoUno h1 {
     font-size: 40px;
-    line-height: 40px;/* 
+    line-height: 40px;
+    /* 
     border: 1px solid red; */
     margin: 0px;
     font-weight: 200;
     font-style: italic;
     line-height: 40px;
 }
-.secCuatrotextoUno h2{
+
+.secCuatrotextoUno h2 {
     margin: 0px;
-    
-    font-size:30px;
+
+    font-size: 30px;
     font-weight: bold;
     font-style: normal;
     line-height: 40px;
     /* border: 1px solid white; */
 }
-.secCuatrotextoUno b{
-    display: block;/* 
+
+.secCuatrotextoUno b {
+    display: block;
+    /* 
     border: 1px solid red; */
     /* line-height: 10px; */
     font-size: 20px;
@@ -596,7 +666,7 @@ body{
 
 
 
-.seccionApp{ 
+.seccionApp {
     /*background: yellow; */
     /* border:1px solid red;  */
     display: grid;
@@ -604,35 +674,40 @@ body{
     height: 95vh;
     margin-top: 5%;
     position: relative;
-   /*  padding:3% */
-   } 
-.contenedorApp{
+    /*  padding:3% */
+}
+
+.contenedorApp {
     height: 95vh;
     width: 100%;
     /* border:1px solid yellow; */
     position: relative;
-    
-   /*  background: rgb(81, 99, 133) */;  
+
+    /*  background: rgb(81, 99, 133) */
+    ;
 }
-.contenedorFondos{
+
+.contenedorFondos {
     height: 40vh;
     width: 100%;
     position: absolute;
 }
-.seccionContraste{
+
+.seccionContraste {
     height: 65vh;
     width: 100%;
-    background:#00B355;
+    background: #00B355;
     position: absolute;
-    
+
 }
-.seccionClara{
+
+.seccionClara {
     margin-top: 65vh;
     height: 30vh;
     width: 100%;
     background: #141518;
     position: absolute;
-    
+
 }
 
 
@@ -647,53 +722,59 @@ body{
 
 
 
-.secAppcontenedor{
+.secAppcontenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "imagenAppsContenedor  ApptextoContenedor";
     position: relative;
     align-items: center;
     height: 95vh;
-    }
+}
 
-.imagenAppsContenedor{
+.imagenAppsContenedor {
     grid-area: imagenAppsContenedor;
     /* border: 1px solid yellow; */
     margin-top: 20%;
     justify-self: center;
 }
-.imagenAppsContenedor img{
+
+.imagenAppsContenedor img {
     /* border: 1px solid red; */
     /* justify-self: center; */
     width: 100%;
     padding-left: 2%;
     margin-top: -14%;
 }
-.ApptextoContenedor{
+
+.ApptextoContenedor {
     /* border: 1px solid yellow; */
     grid-area: ApptextoContenedor;
     color: white;
     /* margin-top: 18%; */
-    padding:0 1% ;
-    
+    padding: 0 1%;
+
 }
-.TextApp{
-    margin:0;
+
+.TextApp {
+    margin: 0;
 }
-.text{
+
+.text {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 0px;
     line-height: 40px;
     margin-top: 0px;
-}  
-.iconUno{
+}
+
+.iconUno {
     display: inline-block;
     font-size: 30px;
-    color:white;
+    color: white;
     margin-top: 0px;
 }
-.texticonUno{
+
+.texticonUno {
     margin-top: 30px;
     display: inline-block;
     font-size: 30px;
@@ -703,15 +784,16 @@ body{
     line-height: 20px;
 }
 
-.iconDos{
+.iconDos {
     display: block;
     font-size: 30px;
-    color:white; 
+    color: white;
 }
-.texticonDos{
+
+.texticonDos {
     margin-left: 0px;
     margin-top: 0;
-    display:inline-block;
+    display: inline-block;
     font-size: 30px;
     margin-bottom: 0px;
     font-weight: lighter;
@@ -723,12 +805,14 @@ body{
     font-style: italic;
     line-height: 40px; */
 }
-.iconTres{
+
+.iconTres {
     display: block;
     font-size: 30px;
-    color:white; 
+    color: white;
 }
-.texticonTres{
+
+.texticonTres {
     display: inline;
     font-size: 30px;
     margin-bottom: 0px;
@@ -736,9 +820,10 @@ body{
     font-style: normal;
     line-height: 10px;
 }
-.boton{
+
+.boton {
     background: white;
-    color:#00B355;
+    color: #00B355;
     display: block;
     padding: 5px 5px;
     text-align: center;
@@ -750,13 +835,15 @@ body{
     margin: 40px auto;
     font-size: 25px;
 }
-.boton:hover{
+
+.boton:hover {
     background: rgb(240, 240, 240);
-    color:#00B355;
+    color: #00B355;
 }
-.boton:active{
+
+.boton:active {
     background: rgb(206, 206, 206);
-    color:#00B355;
+    color: #00B355;
 }
 
 /* @media screen and (max-width:2560px){
@@ -787,9 +874,9 @@ body{
         line-height: 40px;
     }
 } */
-@media screen and (max-width:1440px){
-    .secTrestextoUno{
-        grid-area: secTrestextoUno ;
+@media screen and (max-width:1440px) {
+    .secTrestextoUno {
+        grid-area: secTrestextoUno;
         width: 100%;
         color: rgb(255, 255, 255);
         height: 70vh;
@@ -797,73 +884,88 @@ body{
         align-content: center;
         margin-top: -100px;
     }
-    .secTrestextoUno h1{
-    padding-right: 8%;
-    margin-top: 10%;
-    margin-bottom: 0px;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 50px;
+
+    .secTrestextoUno h1 {
+        padding-right: 8%;
+        margin-top: 10%;
+        margin-bottom: 0px;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 50px;
     }
-    .secTrestextoUno h2{
+
+    .secTrestextoUno h2 {
         font-size: 20px;
         line-height: 20px;
     }
-    
+
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
     .texSuperior {
         margin-top: -6%;
     }
-    .secTrestextoUno h1{
+
+    .secTrestextoUno h1 {
         font-size: 40px;
         line-height: 40px;
     }
-    .secTrestextoUno h2{
+
+    .secTrestextoUno h2 {
         font-size: 20px;
         line-height: 20px;
     }
+
     .ApptextoContenedor {
         /* border: 1px solid yellow; */
         grid-area: ApptextoContenedor;
         color: white;
-       
+
         justify-self: center;
         margin-top: 6%;
     }
-    .text{
+
+    .text {
         font-size: 30px;
         line-height: 30px;
-    } 
+    }
+
     .texticonUno {
         margin-top: 30px;
         font-size: 20px;
         line-height: 20px;
     }
+
     .iconUno {
         font-size: 20px;
     }
-    .texticonDos{
+
+    .texticonDos {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconDos{
+
+    .iconDos {
         font-size: 20px;
     }
-    .texticonTres{
+
+    .texticonTres {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconTres{
+
+    .iconTres {
         font-size: 20px;
     }
+
     .imagenAppsContenedor img {
         width: 100%;
         padding-left: 2%;
-       
+
     }
-    .boton{
+
+    .boton {
         padding: 3px 3px;
         margin: 5% auto 13%;
         font-size: 22px;
@@ -876,54 +978,64 @@ body{
         /* border: 1px solid yellow; */
         grid-area: ApptextoContenedor;
         color: white;
-       
+
         justify-self: center;
         margin-top: 6%;
     }
-    .text{
+
+    .text {
         font-size: 23px;
-    line-height: 23px;
-    } 
+        line-height: 23px;
+    }
+
     .texticonUno {
         margin-top: 30px;
         font-size: 20px;
         line-height: 20px;
     }
+
     .iconUno {
         font-size: 20px;
     }
-    .texticonDos{
+
+    .texticonDos {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconDos{
+
+    .iconDos {
         font-size: 20px;
     }
-    .texticonTres{
+
+    .texticonTres {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconTres{
+
+    .iconTres {
         font-size: 20px;
     }
+
     .imagenAppsContenedor img {
         width: 100%;
         padding-left: 2%;
         margin-top: -12%;
     }
-    .boton{
+
+    .boton {
         padding: 3px 3px;
-    margin: 4% auto 5%;
-    font-size: 22px;
+        margin: 4% auto 5%;
+        font-size: 22px;
     }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:425px) {
     .irApp {
         display: grid;
-    align-content: center;
-    justify-content: center;
+        align-content: center;
+        justify-content: center;
     }
+
     .contenedorInicio {
         position: relative;
         /* border: 10px solid purple; */
@@ -939,6 +1051,7 @@ body{
         padding-right: 5%;
         padding-top: 1%;
     }
+
     .irAppBoton {
         background: rgba(255, 255, 255, 0.2);
         color: white;
@@ -952,6 +1065,7 @@ body{
         box-shadow: 0px 2px 0px rgba(0, 255, 0, 0.3);
         border-radius: 20px;
     }
+
     .textoUno h1 {
         display: block;
         /* border: 1px solid red; */
@@ -965,56 +1079,67 @@ body{
         font-size: 100px;
         line-height: 110px;
     }
+
     .textoUno h2 {
-    display: inline-block;
-    /* border: 1px solid blue; */
-    margin: 0;
-    font-size: 40px;
-    padding: 0px;
-    padding-left: 0px;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 60px;
-}
-.contenedorUno b {
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 10px;
-}
-.contenedorDos b {
-    font-size: 10px;
-    font-weight: normal;
-    display: grid;
-    line-height: 10px;
-}
-.contenedorTres b {
-    font-size: 1;
-    font-size: 10px;
-    display: grid;
-    line-height: 10px;
-}
-.contenedorUno{
-    display: grid;
-    padding: 15px 5px;
-}
-.contenedorDos{
-    display:grid;
-}
-.contenedorTres{
-    display: grid;
-    padding: 15px 10px;
-}
-    .textoUno h1{
-        font-size:40px;
+        display: inline-block;
+        /* border: 1px solid blue; */
+        margin: 0;
+        font-size: 40px;
+        padding: 0px;
+        padding-left: 0px;
+        font-weight: 100;
+        font-style: italic;
+        line-height: 60px;
+    }
+
+    .contenedorUno b {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 10px;
+    }
+
+    .contenedorDos b {
+        font-size: 10px;
+        font-weight: normal;
+        display: grid;
+        line-height: 10px;
+    }
+
+    .contenedorTres b {
+        font-size: 1;
+        font-size: 10px;
+        display: grid;
+        line-height: 10px;
+    }
+
+    .contenedorUno {
+        display: grid;
+        padding: 15px 5px;
+    }
+
+    .contenedorDos {
+        display: grid;
+    }
+
+    .contenedorTres {
+        display: grid;
+        padding: 15px 10px;
+    }
+
+    .textoUno h1 {
+        font-size: 40px;
         line-height: 40px;
     }
-    .textoUno h2{
+
+    .textoUno h2 {
         font-size: 25px;
         line-height: 25px;
     }
+
     .texSuperior {
         margin-top: -13%;
     }
+
     .texSuperior h1 {
         /* border: 1px solid red; */
         margin: 0;
@@ -1028,6 +1153,7 @@ body{
         color: rgb(255, 255, 255);
         border-radius: 50px;
     }
+
     .secDostextoUno h1 {
         font-size: 20px;
         line-height: 50px;
@@ -1037,6 +1163,7 @@ body{
         font-style: italic;
         line-height: 20px;
     }
+
     .secDostextoUno h2 {
         margin: 0px;
         font-weight: 400;
@@ -1046,6 +1173,7 @@ body{
         font-style: normal;
         line-height: 15px;
     }
+
     .secDostextoUno b {
         display: block;
         /* border: 1px solid red; */
@@ -1056,107 +1184,114 @@ body{
         font-style: normal;
         line-height: 10px;
     }
-    .secTrestextoUno{
-    display: grid;
-    align-content: center;
+
+    .secTrestextoUno {
+        display: grid;
+        align-content: center;
     }
-    .secTrestextoUno h1{
+
+    .secTrestextoUno h1 {
         font-size: 20px;
         line-height: 20px;
         margin-left: -15%;
     }
-    .secTrestextoUno h2{
+
+    .secTrestextoUno h2 {
         font-size: 15px;
         line-height: 15px;
         margin-left: -15%;
     }
-    .secAppcontenedor{
+
+    .secAppcontenedor {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-areas: "imagenAppsContenedor"
-                             "ApptextoContenedor";
+            "ApptextoContenedor";
         position: relative;
         align-items: center;
         height: 95vh;
-        }
+    }
+
     .ApptextoContenedor {
         margin-top: 3%;
         margin-top: 0%;
-      
-       
+
+
     }
-    .text{
+
+    .text {
         font-size: 23px;
-    line-height: 23px;
-    margin-bottom: 14%;
-    margin-top: 4%;
-    } 
+        line-height: 23px;
+        margin-bottom: 14%;
+        margin-top: 4%;
+    }
+
     .texCuatroSuperior h1 {
-        
+
         font-size: 16px;
-       
+
         line-height: 16px;
     }
+
     .secCuatrotextoUno h1 {
         font-size: 20px;
         line-height: 20px;
     }
-    .secCuatrotextoUno h2{
+
+    .secCuatrotextoUno h2 {
         font-size: 16px;
         line-height: 16px;
         margin: 5% 0px;
     }
-    .secCuatrotextoUno b{
+
+    .secCuatrotextoUno b {
         font-size: 12px;
         line-height: 12px;
     }
-    .secCuatrocontenedorUno{
+
+    .secCuatrocontenedorUno {
         width: 274px;
     }
+
     .texticonUno {
         line-height: 20px;
         margin-top: 14px;
         font-size: 18px;
     }
+
     .iconUno {
         font-size: 18px;
     }
-    .texticonDos{
+
+    .texticonDos {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconDos{
+
+    .iconDos {
         font-size: 18px;
     }
-    .texticonTres{
+
+    .texticonTres {
         font-size: 20px;
         line-height: 20px;
     }
-    .iconTres{
+
+    .iconTres {
         font-size: 18px;
     }
+
     .imagenAppsContenedor img {
         display: block;
         margin: auto;
         width: 85%;
-        
+
         margin-top: -12%;
     }
-    .boton{
+
+    .boton {
         padding: 3px 3px;
-    margin: 4% auto 5%;
-    font-size: 17px;
+        margin: 4% auto 5%;
+        font-size: 17px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

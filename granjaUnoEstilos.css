@@ -1,19 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background: rgb(0, 0, 0);
 }
-.saludo{
+
+.saludo {
     width: 100%;
     height: 3vh;
     background: green;
-    display:flex;
+    display: flex;
     align-items: center;
 }
-.mensajeSaludo{
+
+.mensajeSaludo {
     color: white;
     display: flex;
     font-size: 15px;
@@ -22,20 +25,22 @@ body{
     margin-top: 0px;
 }
 
-.navUno{
+.navUno {
     display: flex;
     justify-content: space-between;
     height: 7vh;
     width: 100%;
     background: rgb(0, 165, 0);
 }
-.pestañas{
+
+.pestañas {
     width: 40%;
     display: flex;
     justify-content: space-between;
     padding: 0% 1%;
 }
-.pestañas a{
+
+.pestañas a {
     display: flex;
     height: 100%;
     align-items: center;
@@ -44,23 +49,27 @@ body{
     font-weight: lighter;
     font-size: 120%;
 }
-.Diseño:hover{
+
+.Diseño:hover {
     border-bottom: 1px solid white;
-}
-.Conocimientos:hover{
-    border-bottom: 1px solid white;
-}
-.Dispositivos:hover{
-    border-bottom: 1px solid white;
-    margin-bottom:-10px;
 }
 
-.imagen{
+.Conocimientos:hover {
+    border-bottom: 1px solid white;
+}
+
+.Dispositivos:hover {
+    border-bottom: 1px solid white;
+    margin-bottom: -10px;
+}
+
+.imagen {
     display: flex;
     width: 15%;
     justify-content: flex-end;
 }
-.logo{
+
+.logo {
     display: flex;
     height: 85%;
     align-self: center;
@@ -68,83 +77,93 @@ body{
 }
 
 
-.padre{
+.padre {
     display: grid;
     grid-template-columns: minmax(auto, 1024px);
     justify-content: center;
 }
 
-.contenedor{
+.contenedor {
     /* border: 1px solid red; */
     width: 100%;
     height: 85vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-areas:"Farm     Control Control Control"
-                       "Cultivos Control Control Control";
-    grid-gap:10px;    
-    margin-top: 1%;           
+    grid-template-areas: "Farm     Control Control Control"
+        "Cultivos Control Control Control";
+    grid-gap: 10px;
+    margin-top: 1%;
 }
-.farm{
+
+.farm {
     grid-area: Farm;
-    height: 20vh; 
+    height: 20vh;
     display: flex;
     flex-direction: column;
 }
 
-.secFarm{
+.secFarm {
     background: green;
     height: 5vh;
 }
-.farm h1{
+
+.farm h1 {
     text-decoration: none;
     display: flex;
-    color:white;
+    color: white;
     font-weight: bold;
     justify-content: center;
     font-size: 17px;
     padding: 1% 0%;
 }
-.farm a{
+
+.farm a {
     text-decoration: none;
     display: flex;
-    color:white;
+    color: white;
     font-weight: normal;
     justify-content: center;
     font-size: 20px;
 }
-.secAreaUno{
+
+.secAreaUno {
     height: 5vh;
-    background:rgb(14, 151, 14);
+    background: rgb(14, 151, 14);
     box-sizing: border-box;
 }
-.secAreaUno:hover{
+
+.secAreaUno:hover {
     border-bottom: 1px solid white;
 }
-.secAreaDos{
+
+.secAreaDos {
     height: 5vh;
-    background:rgb(14, 151, 14);
+    background: rgb(14, 151, 14);
     box-sizing: border-box;
 }
-.secAreaDos:hover{
+
+.secAreaDos:hover {
     border-bottom: 1px solid white;
 }
-.secAreaTres{
+
+.secAreaTres {
     height: 5vh;
-    background:rgb(14, 151, 14);
+    background: rgb(14, 151, 14);
     box-sizing: border-box;
 }
-.secAreaTres:hover{
+
+.secAreaTres:hover {
     border-bottom: 1px solid white;
 }
 
 
-.control{
+.control {
     grid-area: Control;
-    border:1px solid green;
-    background:rgb(173, 197, 173);
+    border: 1px solid green;
+    background: rgb(173, 197, 173);
 }
-.controlMensaje{
+
+.controlMensaje {
     height: 5vh;
     background: green;
     display: flex;
@@ -155,17 +174,19 @@ body{
     margin-bottom: 1%;
 }
 
-.contenedorDatos{
+.contenedorDatos {
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid red; */
 }
-.temperatura{
+
+.temperatura {
     width: 30%;
     height: 15vh;
     /* border: 1px solid yellow; */
 }
-.temperatura h1{
+
+.temperatura h1 {
     display: flex;
     height: 5vh;
     padding: 0% 1%;
@@ -174,7 +195,8 @@ body{
     justify-content: center;
     background: green;
 }
-.temperatura h2{
+
+.temperatura h2 {
     color: white;
     display: flex;
     height: 10vh;
@@ -184,12 +206,14 @@ body{
     justify-content: center;
     background: rgb(28, 168, 28);
 }
-.humedad{
+
+.humedad {
     width: 30%;
     height: 15vh;
-   /*  border: 1px solid yellow; */
+    /*  border: 1px solid yellow; */
 }
-.humedad h1{
+
+.humedad h1 {
     display: flex;
     height: 5vh;
     padding: 0% 1%;
@@ -198,7 +222,8 @@ body{
     justify-content: center;
     background: green;
 }
-.humedad h2{
+
+.humedad h2 {
     color: white;
     display: flex;
     height: 10vh;
@@ -208,12 +233,14 @@ body{
     justify-content: center;
     background: rgb(28, 168, 28);
 }
-.agua{
+
+.agua {
     width: 30%;
     height: 15vh;
-   /*  border: 1px solid yellow; */
+    /*  border: 1px solid yellow; */
 }
-.agua h1{
+
+.agua h1 {
     display: flex;
     height: 5vh;
     padding: 0% 1%;
@@ -222,7 +249,8 @@ body{
     justify-content: center;
     background: green;
 }
-.agua h2{
+
+.agua h2 {
     color: white;
     display: flex;
     height: 10vh;
@@ -232,21 +260,25 @@ body{
     justify-content: center;
     background: rgb(28, 168, 28);
 }
-.control h1{
+
+.control h1 {
     color: white;
 }
-.controles{
-    border:1px solid rgb(255, 255, 255);
-    margin:1% 2%;
-    height:63vh;
+
+.controles {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1% 2%;
+    height: 63vh;
 }
-.upControles{
+
+.upControles {
     background: rgb(62, 179, 62);
     height: 30vh;
     width: 100%;
     display: flex;
 }
-.controlUno{
+
+.controlUno {
     display: flex;
     height: 100%;
     width: 50%;
@@ -255,7 +287,9 @@ body{
     border-right: 1px solid white;
     flex-direction: column;
 }
-.controlUno h1{/* 
+
+.controlUno h1 {
+    /* 
     border: 1px solid blue; */
     display: flex;
     font-size: 25px;
@@ -265,16 +299,19 @@ body{
     justify-content: center;
     align-items: center;
 }
-.controlUnoBotones{
+
+.controlUnoBotones {
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    
+
 }
-.controlUno h2{/* 
+
+.controlUno h2 {
+    /* 
     border: 1px solid red; */
     display: flex;
     height: 6vh;
@@ -283,7 +320,8 @@ body{
     align-items: center;
     color: white;
 }
-.botonRiego{
+
+.botonRiego {
     border: 1px solid white;
     display: flex;
     height: 8vh;
@@ -294,22 +332,26 @@ body{
     color: white;
     background: green;
     border-radius: 30px;
-    margin-top: 2% ; 
+    margin-top: 0%;
     border-bottom: 2px solid white;
 }
-.botonRiego:hover{
+
+.botonRiego:hover {
     background: rgb(0, 153, 0);
 }
-.controlDos{
+
+.controlDos {
     display: flex;
     height: 100%;
     width: 50%;
-   /*  border: 1px solid rgb(136, 255, 0); */
+    /*  border: 1px solid rgb(136, 255, 0); */
     justify-content: start;
     border-right: 1px solid white;
     flex-direction: column;
 }
-.controlDos h1{display: flex;
+
+.controlDos h1 {
+    display: flex;
     font-size: 25px;
     background: green;
     height: 6vh;
@@ -317,7 +359,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.controlDosBotones{
+
+.controlDosBotones {
     /* border: 1px solid blue; */
     display: flex;
     justify-content: start;
@@ -325,13 +368,15 @@ body{
     height: 100%;
     flex-direction: column;
 }
-.textControlBotones{
+
+.textControlBotones {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.controlDosBotones h2{
-   /*  border: 1px solid red; */
+
+.controlDosBotones h2 {
+    /*  border: 1px solid red; */
     display: flex;
     height: 6vh;
     font-size: 17px;
@@ -339,23 +384,26 @@ body{
     align-items: center;
     color: white;
 }
-.setConfig{
+
+.setConfig {
     /* border: 1px solid yellow; */
     display: flex;
-    color:white;
+    color: white;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     height: 5vh;
 }
-.contenedorBotonRiego{
+
+.contenedorBotonRiego {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-   /*  border: 1px solid yellow; */
+    /*  border: 1px solid yellow; */
 }
-.botonRiegoAutomatico{
+
+.botonRiegoAutomatico {
     border: 1px solid white;
     display: flex;
     height: 8vh;
@@ -369,10 +417,12 @@ body{
     border-radius: 30px;
     border-bottom: 2px solid white;
 }
-.botonRiegoAutomatico:hover{
+
+.botonRiegoAutomatico:hover {
     background: rgb(0, 153, 0);
 }
-.controlTres{
+
+.controlTres {
     display: flex;
     width: 100%;
     height: 33vh;
@@ -380,7 +430,9 @@ body{
     background: rgb(62, 179, 62);
     flex-direction: column;
 }
-.controlTres h1{/* 
+
+.controlTres h1 {
+    /* 
     border:1px solid red; */
     display: flex;
     font-size: 25px;
@@ -389,7 +441,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-.contenedorCultivos{/* 
+
+.contenedorCultivos {
+    /* 
     border:1px solid red; */
     display: flex;
     height: 40vh;
@@ -399,7 +453,8 @@ body{
     flex-direction: row;
     /* box-sizing: content-box; */
 }
-.contenedorCultivos img{
+
+.contenedorCultivos img {
     margin: 0% 1%;
     display: flex;
     flex-wrap: wrap;
@@ -407,13 +462,14 @@ body{
     align-items: center;
     height: 12vh;
 }
-.contenedorCultivos img:hover{
+
+.contenedorCultivos img:hover {
     box-sizing: border-box;
     border: 2px solid yellow;
     border-radius: 100%;
 }
 
-.cultivos{
+.cultivos {
     grid-area: Cultivos;
     background: #3EB33E;
     height: 65vh;
@@ -423,7 +479,8 @@ body{
     justify-content: center;
     align-items: stretch;
 }
-.cultivos h1{
+
+.cultivos h1 {
     display: flex;
     background: green;
     justify-content: center;
@@ -432,7 +489,7 @@ body{
     font-size: 17px;
 }
 
-.agregarCultivos{
+.agregarCultivos {
     background: green;
     display: flex;
     flex-wrap: wrap;
@@ -443,124 +500,294 @@ body{
     margin-top: 3%;
     border-radius: 30px;
 }
-.agregarCultivos img{
+
+.agregarCultivos img {
     margin: 0% 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
-    height: 12vh;
+    height: 10vh;
 }
-.agregarCultivos img:hover{
+
+.agregarCultivos img:hover {
     box-sizing: border-box;
     border: 3px solid white;
     border-radius: 100%;
 }
-.botonAgregar{
+
+.botonAgregar {
     display: flex;
     text-decoration: none;
     color: white;
-    background:#FAB515;
-    border:2px solid white;
+    background: #FAB515;
+    border: 2px solid white;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 70%;
     height: 5vh;
-    margin-top:3% ;
+    margin-top: 3%;
 }
-.botonAgregar:hover{
+
+.botonAgregar:hover {
     color: white;
-    background:#dba31e;
-    border:2px solid white;
+    background: #dba31e;
+    border: 2px solid white;
 }
-@media screen and (max-width:2560px){
-    .pestañas{
+
+@media screen and (max-width:2560px) {
+    .pestañas {
         width: 34%;
-        
+
+    }
+
+    .agregarCultivos img {
+        height: 5vh;
     }
 }
-@media screen and (max-width:1440px){
-    .pestañas{
+
+@media screen and (max-width:1440px) {
+    .pestañas {
         width: 46%;
     }
+
+    .agregarCultivos img {
+        height: 11vh;
+    }
 }
-@media screen and (max-width:1024px){
-    .pestañas{
+
+@media screen and (max-width:1024px) {
+    .pestañas {
         width: 61%;
     }
-    .botonRiegoAutomatico{
+
+    .botonRiegoAutomatico {
         width: 18vw;
     }
-    .botonRiego{
+
+    .botonRiego {
         width: 18vw;
     }
-    
+
+    .agregarCultivos img {
+        height: 10vh;
+    }
+
 }
-@media screen and (max-width:928px){
-    .agregarCultivos{
-        margin:0% 1%;
+
+@media screen and (max-width:928px) {
+    .agregarCultivos {
+        margin: 0% 1%;
         margin-top: 3%;
     }
 }
-@media screen and (max-width:768px){
-    .padre{
+
+@media screen and (max-width:768px) {
+    .padre {
         display: grid;
         grid-template-columns: minmax(auto, 768px);
         justify-content: center;
     }
-    
-    .contenedor{
+
+    .contenedor {
         /* border: 1px solid red; */
         width: 100%;
         height: 85vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-       grid-template-areas:"Farm     Farm     Farm     Farm"
-                           "Cultivos Cultivos Cultivos Cultivos"
-                           "Control Control Control Control"
-                           "Control Control Control Control";
-        grid-gap:10px;    
-        margin-top: 1%;           
+        grid-template-areas: "Farm     Farm     Farm     Farm"
+            "Cultivos Cultivos Cultivos Cultivos"
+            "Control Control Control Control"
+            "Control Control Control Control";
+        grid-gap: 10px;
+        margin-top: 1%;
     }
-    .navUno{
+
+    .navUno {
         height: 15vh;
     }
-    .pestañas{
+
+    .pestañas {
         font-size: 15px;
         flex-direction: column;
     }
-    .logo{
-    display: flex;
-    height: 45%;
-    align-self: center;
-    border-left: 1px solid white;
-    padding-right: 10%;
-    padding-left: 15%;
+
+    .logo {
+        display: flex;
+        height: 45%;
+        align-self: center;
+        border-left: 1px solid white;
+        padding-right: 10%;
+        padding-left: 15%;
     }
-    .temperatura h1{
+
+    .temperatura h1 {
         font-size: 10px;
     }
-    .humedad h1{
+
+    .humedad h1 {
         font-size: 10px;
     }
-    .agua h1{
+
+    .agua h1 {
         font-size: 10px;
     }
-    .controlDos h1{
+
+    .controlDos h1 {
         font-size: 15px;
     }
-    .controlUno h1{
+
+    .controlUno h1 {
         font-size: 15px;
     }
-    .botonRiego{
+
+    .botonRiego {
         width: 40vw;
     }
-    .botonRiegoAutomatico{
+
+    .botonRiegoAutomatico {
         width: 40vw;
     }
-    .contenedorCultivos img{
+
+    .contenedorCultivos img {
         height: 10vh;
     }
+}
+
+
+
+
+
+
+
+
+
+
+.MENSAJE {
+    display: flex;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(29, 36, 59, 0.8);
+}
+
+.MensajeDos {
+    display: flex;
+    position: absolute;
+    height: 70%;
+    width: 60%;
+    background: rgba(48, 70, 141, 0.9);
+    border-radius: 20px;
+    border: 1px solid white;
+    flex-wrap: wrap;
+}
+
+/* ----------------------------- */
+.divCerrar {
+    border-bottom: 1px solid rgb(123, 123, 248);
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cerrar {
+    display: flex;
+    height: 3vh;
+    width: 3vw;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: white;
+    color: rgb(48, 70, 141, 0.9);
+    margin-right: 10px;
+    flex-direction: row;
+}
+
+.mensajeContenedorImg {
+    display: flex;
+    width: 100%;
+    height: 57vh;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.mensajeContenedorImg h2{
+    color: white;
+    font-weight: lighter;
+}
+
+.mensajeAgroConocimientos {
+    display: flex;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+}
+.mensajeImagenAgro{
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(238, 255, 0); */
+    padding: 10px;
+}
+.imgM {
+    border: 5px solid yellow;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-self:center ;
+    border-radius: 100%;
+}
+.info{
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+    border-top: 5px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: lighter;
+    font-size: 100%;
+    align-self: center;
+}
+.agroconomicientosMensaje{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    /* border:1px solid rgb(255, 255, 255); */
+    align-items: center;
+    justify-content: center;
+}
+.agoconocimientosMensajeDos{
+    display: flex;
+    height: 5vh;
+    width: 50%;
+    border-radius: 10px;
+    border:2px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+.irAgroconocmientosMensaje{
+    display: flex;
+    color: white;
+    height: 5vh;
+    width: 100%;
+    font-size: 12px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
